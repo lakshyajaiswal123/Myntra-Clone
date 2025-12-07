@@ -1,0 +1,143 @@
+@font-face {
+    font-family:"bhuppi";
+    src: url(../assets/Assistant-Bold.woff);
+    
+}
+
+@font-face {
+    font-family:"regular" ;
+    src: url(../assets/Assistant-Regular.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "regular";
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    color: black;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "bhuppi";
+    border: 1px solid black;
+    padding: 20px;
+   position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    
+}
+#left-nav{
+    display: flex;
+gap: 20px;
+    align-items: center;
+}
+#left-nav img{
+    width: 50px;
+}
+sup{
+    color: red;
+}
+#right-nav{
+    display: flex;
+    gap: 30px;
+   border: 1px solid black;
+    align-items: center;
+}
+/* #right-nav input{
+    width: %;
+    padding: 10px 40px;
+    outline: none;
+    color: black;
+    background-color: #188c90;
+    border: none;
+
+} */
+ .search {
+    display: flex;
+    justify-content: start;
+    height: 28px;
+    width: 40px;
+ }
+ you
+#right-nav span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#product-container{
+    width: 100%;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   gap: 40px;
+   padding: 20px;
+padding-top: 150px;
+}
+#product{
+    box-shadow: black;
+    cursor: pointer;
+}
+#product img{
+    width: 100%;
+
+}
+#product-information h2{
+    font-family: "bhuppi";
+}
+#prices{
+    display: flex;
+    gap: 10px;
+}
+#discounted-price{
+    font-family: "bhuppi";
+    color: black;
+
+}
+#real-price{
+    text-decoration: line-through;
+    color: grey;
+}
+#offer{
+    color: red;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    margin: none;
+    border: none;
+    background-color: darkcyan;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    
+}
+footer p{
+    background-color: darkcyan;
+}
+footer h3{
+    background-color: lightgray;
+
+}
+#profile i{
+    font-size: large;
+}
+#preloader{
+    background:#000 url(preloader\image.gif) no-repeat center center;
+    height: 100vh;
+    background-size: 15%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
